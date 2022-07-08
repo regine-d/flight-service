@@ -3,7 +3,7 @@ import { EditForm } from '../components/Form';
 export const EditFlights = () => {
     return (
         <>
-        <div class = "glass">
+        <div id = "editFlight">
         <EditForm />
         </div>
         </>

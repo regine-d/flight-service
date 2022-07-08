@@ -24,7 +24,7 @@ export const FlightList = () => {
     return (
         <>
             <div className='glassTable' id='flights'>
-                <table>
+                <table id='myTable'>
                     <thead>
                         <tr>
                             <th>Flight<br />Number</th>
