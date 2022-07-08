@@ -72,9 +72,10 @@ const deleteFlight = async flightNumber => {
     }
 }
 
-const updateFlight = async (flightNumber, update) => {
+const updateFlight = async (update) => {
     try{
-        let flight = await Flight.findOneAndUpdate({flightNumber}, update, {new:true})
+        console.log(update)
+        let flight = await Flight.findOneAndUpdate({flightNumber: update.flightNumber}, update, {new:true})
         if (flight == null) {
             throw `No flight with the id of ${flightNumber} found`
         }

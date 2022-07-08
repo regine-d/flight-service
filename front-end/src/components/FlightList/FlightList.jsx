@@ -1,5 +1,6 @@
 import axios from 'axios';
 import {useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 export const FlightList = () => {
 
@@ -19,15 +20,7 @@ export const FlightList = () => {
         });
     }
 
-    const editFlight = (id) => {
-        axios.patch(`http://localhost:8085/flights/${id}`).then(res =>  
-            setFlights(res => setFlights(res.data))
-        )
-        .catch(err => {
-        console.log(err);
-        });
-    }
-
+    
     return (
         <>
             <div className='glassTable' id='flights'>

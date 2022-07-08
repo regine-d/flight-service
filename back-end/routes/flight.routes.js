@@ -44,9 +44,10 @@ router.delete("/:id", async (req, res) => {
     }
 })
 
-router.patch("/:id", async (req, res) => {
+router.put("/", async (req, res) => {
     try {
-        await updateFlight(req.params.id, req.body);
+        console.log(req.body)
+        await updateFlight(req.body);
         res.json({response: "ok"});
     } catch (err) {
         res.status(err?.status || 400).json(err);
