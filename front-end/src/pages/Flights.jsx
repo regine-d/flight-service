@@ -4,6 +4,7 @@ export const Flights = () => {
     return (
         <>
         <FlightList />
+    
         </>   
     )
 }

@@ -18,8 +18,7 @@ export const Form = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        if (currNumPassengersRef.current.value <= passengerLimitRef.current.value) {
-        
+
             try {
                 await axios.post('http://localhost:8085/flights',
                 {   flightNumber: flightNumberRef.current.value, 
@@ -36,13 +35,7 @@ export const Form = () => {
             } catch (error) {
                 console.log('Something Went Wrong');
             }
-            document.getElementById("MyForm").reset();
-        }
-        else {
-            alert('Too many passengers')
-            document.getElementById("MyForm").reset();
-        }
-        
+            document.getElementById("MyForm").reset();       
         
     }
 

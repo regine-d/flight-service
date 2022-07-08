@@ -39,7 +39,7 @@ export const EditForm = () => {
 
     return (
         <>
-            <form className="MyForm" id = "MyForm" onSubmit={(event) => {event.preventDefault();
+            <form className="MyForm" id = "MyFormE" onSubmit={(event) => {event.preventDefault();
                 handleSubmit ()} 
             }>
                     
@@ -88,7 +88,7 @@ export const EditForm = () => {
                     <input id="passengerLimit" type="text" placeholder="PASSENGER LIMIT" ref={passengerLimitRef}/>
                     <br></br>
                 
-                <input id = "addFlight" type="submit" value="Add Flight" />
+                <input id = "editFlight" type="submit" value="Edit Flight" />
                 
             </form>
         </>

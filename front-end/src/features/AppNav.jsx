@@ -24,7 +24,10 @@ export const AppNav = () => {
 
             <NavSection jc="flex-end">
                 <NavItem>
-                    <NavLink to="/flights">FLIGHT MANAGER</NavLink>
+                    <NavLink to="/flights">VIEW FLIGHTS</NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink to="/editflight">EDIT FLIGHTS</NavLink>
                 </NavItem>
             </NavSection>
         </Nav>
