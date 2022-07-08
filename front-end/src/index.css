@@ -37,6 +37,11 @@ body {
   height: 30px;
 }
 
+.navLink {
+  font-size: 14px;
+  margin: 10px;
+}
+
 #nav-logo-text {
   padding-top:5px;
   height: 35px;
